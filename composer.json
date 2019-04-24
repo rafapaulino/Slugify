@@ -1,6 +1,6 @@
 {
     "name": "rafapaulino/slugify",
-    "description": "Slugfy Urls and File Names in Laravel",
+    "description": "Slugify Urls and File Names in Laravel",
     "license": "MIT",
     "authors": [
         {
