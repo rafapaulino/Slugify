@@ -1,0 +1,44 @@
+{
+    "name": "rafapaulino/slugify",
+    "description": "Slugfy Urls and File Names in Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Paulino",
+            "email": "rafaclasses@gmail.com",
+            "homepage": "https://rafapaulino.com"
+        }
+    ],
+    "homepage": "https://github.com/rafapaulino/slugify",
+    "keywords": ["Laravel", "Slugify"],
+    "require": {
+        "illuminate/support": "~5",
+        "ausi/slug-generator": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rafapaulino\\Slugify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "rafapaulino\\Slugify\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rafapaulino\\Slugify\\SlugifyServiceProvider"
+            ],
+            "aliases": {
+                "Slugify": "rafapaulino\\Slugify\\Facades\\Slugify"
+            }
+        }
+    }
+}
